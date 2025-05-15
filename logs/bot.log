@@ -34,3 +34,14 @@ Traceback (most recent call last):
 aiogram.utils.exceptions.ChatNotFound: Chat not found
 2025-05-13 09:26:06,092 - INFO - aiogram.dispatcher.dispatcher - Stop polling...
 2025-05-13 09:26:06,098 - WARNING - aiogram - Goodbye!
+2025-05-16 01:23:43,393 - INFO - aiogram.dispatcher.dispatcher - Start polling.
+2025-05-16 01:25:46,384 - INFO - root - User 1808508866 updated username
+2025-05-16 01:25:47,055 - INFO - root - 1808508866 used /start
+2025-05-16 01:25:50,637 - INFO - root - User 1808508866 selected subject 2
+2025-05-16 01:25:52,380 - INFO - root - User 1808508866 selected order type 2
+2025-05-16 01:26:01,269 - INFO - root - User 1808508866 added order details
+2025-05-16 01:28:22,967 - INFO - root - User 1808508866 cancelled action
+2025-05-16 01:28:30,028 - INFO - root - User 1808508866 viewed orders list
+2025-05-16 01:28:32,537 - INFO - root - User 1808508866 viewed order 127
+2025-05-16 01:31:38,448 - INFO - aiogram.dispatcher.dispatcher - Stop polling...
+2025-05-16 01:31:38,455 - WARNING - aiogram - Goodbye!
