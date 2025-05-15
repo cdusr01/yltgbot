@@ -1,0 +1,36 @@
+2025-05-13 09:05:53,457 - INFO - aiogram.dispatcher.dispatcher - Start polling.
+2025-05-13 09:06:03,149 - INFO - aiogram.dispatcher.dispatcher - Stop polling...
+2025-05-13 09:06:03,152 - WARNING - aiogram - Goodbye!
+2025-05-13 09:21:14,800 - INFO - aiogram.dispatcher.dispatcher - Start polling.
+2025-05-13 09:22:28,073 - INFO - root - 1808508866 used /menu
+2025-05-13 09:22:40,545 - INFO - root - User 1808508866 selected subject 2
+2025-05-13 09:22:44,646 - INFO - root - User 1808508866 selected order type 2
+2025-05-13 09:22:50,427 - INFO - root - User 1808508866 added order details
+2025-05-13 09:24:37,136 - ERROR - root - [finish_files_handler] ERROR: [Errno 2] No such file or directory: 'orders/65-5'
+Traceback (most recent call last):
+  File "/home/cdusr/PycharmProjects/orderbot/handlers/order_handlers.py", line 158, in finish_files_handler
+    os.mkdir(f"orders/{order_id}-{user.id}")
+FileNotFoundError: [Errno 2] No such file or directory: 'orders/65-5'
+2025-05-13 09:24:45,179 - ERROR - root - [finish_files_handler] ERROR: [Errno 2] No such file or directory: 'orders/66-5'
+Traceback (most recent call last):
+  File "/home/cdusr/PycharmProjects/orderbot/handlers/order_handlers.py", line 158, in finish_files_handler
+    os.mkdir(f"orders/{order_id}-{user.id}")
+FileNotFoundError: [Errno 2] No such file or directory: 'orders/66-5'
+2025-05-13 09:25:24,179 - INFO - root - User 1808508866 created order 67
+2025-05-13 09:25:30,541 - ERROR - root - ERROR: Chat not found
+Traceback (most recent call last):
+  File "/home/cdusr/PycharmProjects/orderbot/handlers/order_handlers.py", line 203, in check_balance
+    await bot.send_message(i.user_id, "Поступил новый заказ!")
+  File "/home/cdusr/.local/lib/python3.10/site-packages/aiogram/bot/bot.py", line 346, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "/home/cdusr/.local/lib/python3.10/site-packages/aiogram/bot/base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "/home/cdusr/.local/lib/python3.10/site-packages/aiogram/bot/api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "/home/cdusr/.local/lib/python3.10/site-packages/aiogram/bot/api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "/home/cdusr/.local/lib/python3.10/site-packages/aiogram/utils/exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.ChatNotFound: Chat not found
+2025-05-13 09:26:06,092 - INFO - aiogram.dispatcher.dispatcher - Stop polling...
+2025-05-13 09:26:06,098 - WARNING - aiogram - Goodbye!
